@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji and Star Rating System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dark-mode-toggle">
+    <label for="dark-mode-toggle">Dark Mode</label>
+    <input type="checkbox" id="dark-mode-toggle">
+  </div>
+  <div class="rating-container">
+    <h2>Rate Your Experience</h2>
+
+    <!-- Star Rating -->
+    <div class="stars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+
+    <!-- Associated Emoji Display -->
+    <div class="emoji-container">
+      <span class="emoji" data-value="1">😡</span>
+      <span class="emoji" data-value="2">😕</span>
+      <span class="emoji" data-value="3">😐</span>
+      <span class="emoji" data-value="4">😊</span>
+      <span class="emoji" data-value="5">😍</span>
+    </div>
+
+    <!-- Label for rating -->
+    <p id="rating-label">Select your rating</p>
+     <!-- Comment Section -->
+     <textarea id="user-comment" placeholder="Leave a comment..."></textarea>
+
+
+    <!-- Submit Button -->
+    <button id="submit-rating">Submit Rating</button>
+
+    <!-- Thank You/Warning Message -->
+    <p id="response-message" class="hidden"></p>
+
+    <!-- Star Burst Animation -->
+    <div id="star-burst" class="hidden">🎉✨</div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
